@@ -21,7 +21,7 @@ int main()
     printf("[Process] test.db 파일을 엽니다...\n");
     fd = open("test.db", O_RDWR | O_CREAT | O_TRUNC, 0644);
 
-    if (fd = -1)
+    if (fd == -1)
     {
         perror("파일 열기 실패"); // 에러 발생 시 원인 출력
         exit(1);
@@ -58,7 +58,7 @@ int main()
         exit(1);
     }
 
-    prinf("[Success] 8000번지에 \"%s\" 작성 완료\n", data3);
+    printf("[Success] 8000번지에 \"%s\" 작성 완료\n", data3);
 
     close(fd);
     printf("[Completed] 모든 작업이 끝났습니다. 'hexdump -C test.db'로 확인해보세요\n");
