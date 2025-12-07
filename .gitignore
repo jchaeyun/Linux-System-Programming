@@ -53,3 +53,13 @@ dkms.conf
 
 # debug information files
 *.dwo
+# 실행 파일들 무시
+practice_io
+practice_mixed_io
+practice_lseek
+mixed_io
+*.out
+
+# 데이터 파일들 무시
+*.db
+
